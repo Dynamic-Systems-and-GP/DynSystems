@@ -1,4 +1,4 @@
-classdef bioreaktor_icecream < process_interface
+classdef bioreactor_icecream < process_interface
     %RAKETA_PROCES Summary of this class goes here
     %   Detailed explanation goes here
     
@@ -138,7 +138,7 @@ classdef bioreaktor_icecream < process_interface
             u=self.umean;
         end  
         
-        function self=bioreaktor_icecream(varargin)
+        function self=bioreactor_icecream(varargin)
             Ts=0.5; % in HOURS = 1800s
             usat=struct('umin',0,'umax',7,'ymin',0.3,'ymax',1.5);
             normdata=struct('umean',3.5,'udelta',3.5,...
@@ -155,4 +155,4 @@ classdef bioreaktor_icecream < process_interface
 end
 
 %hot test hotline:
-%clear classes;Ts=0.3;p=bioreaktor_icecream (Ts);p.init();p.gety();u=p.getidentsignal();N=length(u);y=NaN(N,1);for i=1:N y(i)=p.gety(); p.setu(u(i)); end; ax(1)=subplot(2,1,1); t=1:N; plot(t,y);ax(2)=subplot(2,1,2); plot(t,u); linkaxes(ax,'x');
+%clear classes;Ts=0.3;p=bioreactor_icecream (Ts);p.init();p.gety();u=p.getidentsignal();N=length(u);y=NaN(N,1);for i=1:N y(i)=p.gety(); p.setu(u(i)); end; ax(1)=subplot(2,1,1); t=1:N; plot(t,y);ax(2)=subplot(2,1,2); plot(t,u); linkaxes(ax,'x');
