@@ -1,4 +1,4 @@
-classdef pendulum_model < process_interface
+classdef pendulum < process_interface
     %RAKETA_PROCES Summary of this class goes here
     %   Detailed explanation goes here
     
@@ -69,7 +69,7 @@ classdef pendulum_model < process_interface
             self.u=u;
         end
 
-        function self=pendulum_model(varargin)
+        function self=pendulum(varargin)
             Ts=0.1;
             usat=struct('umin',-1,'umax',1,'ymin',-pi,'ymax',pi);
             normdata=struct('umean',0,'udelta',1,...

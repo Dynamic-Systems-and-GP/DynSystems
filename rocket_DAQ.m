@@ -1,17 +1,17 @@
-classdef raketa_proces < raketa_interface
-    %RAKETA_PROCES Summary of this class goes here
+classdef rocket_DAQ < rocket_interface
+    %rocket_DAQ Summary of this class goes here
     %   Detailed explanation goes here
     
     properties(GetAccess=public,SetAccess=public)
     end
     
     methods
-        function self=raketa_proces(varargin)
+        function self=rocket_DAQ(varargin)
             Ts=0.01;
             if nargin>=1
                 Ts=varargin{1};
             end
-            self=self@raketa_interface(Ts);
+            self=self@rocket_interface(Ts);
             %PID regulator:
 %             self.Kpid=[-0.9/1.1; -.1; -1.5*3;0.08]/2; 
 %             self.Kpid=[-0.9; -.1; -1.2;0.1]; 

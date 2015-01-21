@@ -1,4 +1,4 @@
-classdef narendra_model < process_interface
+classdef narendra < process_interface
     %RAKETA_PROCES Summary of this class goes here
     %   Detailed explanation goes here
     
@@ -76,7 +76,7 @@ classdef narendra_model < process_interface
         end
 
        
-        function self=narendra_model(varargin)
+        function self=narendra(varargin)
             Ts=1;
             usat=struct('umin',-1,'umax',1,'ymin',-1,'ymax',1);
             normdata=struct('umean',0,'udelta',2,...

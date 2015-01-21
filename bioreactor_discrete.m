@@ -1,4 +1,4 @@
-classdef bioreaktor_model < process_interface
+classdef bioreaktor_discrete < process_interface
     %RAKETA_PROCES Summary of this class goes here
     %   Detailed explanation goes here
     
@@ -104,7 +104,7 @@ classdef bioreaktor_model < process_interface
         end
         
         %Konstruktor
-        function self=bioreaktor_model(varargin)
+        function self=bioreaktor_discrete(varargin)
             Ts=0.5;
             usat=struct('umin',0,'umax',0.7,'ymin',0.03,'ymax',0.1);
             normdata=struct('umean',0.35,'udelta',0.35,...

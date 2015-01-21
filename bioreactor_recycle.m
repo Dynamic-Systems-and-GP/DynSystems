@@ -1,4 +1,4 @@
-classdef bioreaktor_model_recycle < process_interface
+classdef bioreaktor_recycle < process_interface
     %RAKETA_PROCES Summary of this class goes here
     %   Detailed explanation goes here
     
@@ -132,7 +132,7 @@ classdef bioreaktor_model_recycle < process_interface
             u=self.umean;
         end  
         
-        function self=bioreaktor_model_recycle(varargin)
+        function self=bioreaktor_recycle(varargin)
             Ts=0.5; % in HOURS = 1800s
 %             usat=struct('umin',0.05,'umax',1,'ymin',0.03,'ymax',1.34);
             usat=struct('umin',0.2,'umax',10,'ymin',0.03,'ymax',1.34);

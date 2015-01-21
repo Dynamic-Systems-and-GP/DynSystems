@@ -1,4 +1,4 @@
-classdef raketa_model_nort < raketa_interface
+classdef rocket < rocket_interface
     %RAKETA_PROCES Summary of this class goes here
     %   Detailed explanation goes here
     
@@ -9,12 +9,12 @@ classdef raketa_model_nort < raketa_interface
     end
     
     methods
-        function self=raketa_model_nort(varargin)
+        function self=rocket(varargin)
             Ts=0.1;
             if nargin>=1
                 Ts=varargin{1};
             end
-            self=self@raketa_interface(Ts);
+            self=self@rocket_interface(Ts);
             addpath('/home/martin/Dropbox/diploma/raketa_model');
             
 %             PID regulator:

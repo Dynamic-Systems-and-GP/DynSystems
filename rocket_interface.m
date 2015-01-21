@@ -1,4 +1,4 @@
-classdef raketa_interface < process_interface
+classdef rocket_interface < process_interface
     %PROCESS_INTERFACE Summary of this class goes here
     %   Detailed explanation goes here
     
@@ -61,7 +61,7 @@ methods
                 r=ones(round(self.Tsim/self.Ts),1)*self.r0;
         end
     end    
-    function self=raketa_interface(varargin)
+    function self=rocket_interface(varargin)
         Ts=0.1;
 %         usat=struct('umin',0,'umax',5,'ymin',0.046,'ymax',0.48);
 %         normdata=struct('umean',2.25,'udelta',1,...
